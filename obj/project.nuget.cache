@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4pNk9I1EUQhSYE4KzdXFQ/4Rui4WJblOT2gqDLE4A+1HZaEP7G44NObHIGcsNfYlS/u+RljhNyfl4SzkJhHhbw==",
+  "dgSpecHash": "F3PJXgO4cwFVQIHnHrq9TkX4t7s0kdWFtL4mvb1MBHmhVHs3jOB0K7E4741OAV0nYLyitoFwIq3MAKya5ovUEA==",
   "success": true,
-  "projectFilePath": "C:\\KYH\\BokBibliotek\\BokBibliotek.csproj",
+  "projectFilePath": "C:\\KYH\\test1\\BokBibliotek2.0\\BokBibliotek.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\krasn\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\krasn\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.10\\microsoft.aspnetcore.jsonpatch.3.1.10.nupkg.sha512",

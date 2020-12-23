@@ -17,7 +17,7 @@ namespace BokBibliotek.Models
         // FK
         public int LåntagareId { get; set; }
         public int BokId { get; set; }
-        //sista gången med ________
+        //sista gången med _________
         public bool Utlånad { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]

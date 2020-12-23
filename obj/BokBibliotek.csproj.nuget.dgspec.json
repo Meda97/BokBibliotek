@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\KYH\\BokBibliotek\\BokBibliotek.csproj": {}
+    "C:\\KYH\\test1\\BokBibliotek2.0\\BokBibliotek.csproj": {}
   },
   "projects": {
-    "C:\\KYH\\BokBibliotek\\BokBibliotek.csproj": {
+    "C:\\KYH\\test1\\BokBibliotek2.0\\BokBibliotek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\KYH\\BokBibliotek\\BokBibliotek.csproj",
+        "projectUniqueName": "C:\\KYH\\test1\\BokBibliotek2.0\\BokBibliotek.csproj",
         "projectName": "BokBibliotek",
-        "projectPath": "C:\\KYH\\BokBibliotek\\BokBibliotek.csproj",
+        "projectPath": "C:\\KYH\\test1\\BokBibliotek2.0\\BokBibliotek.csproj",
         "packagesPath": "C:\\Users\\krasn\\.nuget\\packages\\",
-        "outputPath": "C:\\KYH\\BokBibliotek\\obj\\",
+        "outputPath": "C:\\KYH\\test1\\BokBibliotek2.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\krasn\\AppData\\Roaming\\NuGet\\NuGet.Config",
