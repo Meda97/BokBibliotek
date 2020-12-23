@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BokBibliotek",
+    "\\BokBibliotek\\Controllers",
+    "\\BokBibliotek\\Data",
+    "\\BokBibliotek\\Migrations",
+    "\\BokBibliotek\\Models"
+  ],
+  "SelectedNode": "\\BokBibliotek\\Migrations\\20201221161223_init.Designer.cs",
+  "PreviewInSolutionExplorer": false
+}
