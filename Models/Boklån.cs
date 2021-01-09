@@ -20,8 +20,9 @@ namespace BokBibliotek.Models
         //sista gången med ______________________
         public bool Utlånad { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime Lånedatum { get; set; }
+        //[DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime? Returdatum { get; set; }
 
         //Nav

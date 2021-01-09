@@ -29,7 +29,7 @@ namespace BokBibliotek
         {
             services.AddDbContext<BokbibliotekContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddControllers().AddNewtonsoftJson(x => {
+            services.AddControllersWithViews().AddNewtonsoftJson(x => {
                 x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 x.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
             });
@@ -51,8 +51,11 @@ namespace BokBibliotek
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=försenadeboklån}/{action=Index}/{id?}");
             });
         }
     }
 }
+      

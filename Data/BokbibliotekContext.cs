@@ -47,11 +47,10 @@ namespace BokBibliotek.Data
 
 
             //Lånedatum och Returdatum (DateTime)
-            modelbuilder.Entity<Boklån>()
-            .Property(l => l.Lånedatum)
-            .HasDefaultValueSql("GETDATE()");
+            //modelbuilder.Entity<Boklån>()
+            //.Property(l => l.Lånedatum)
+            //.HasDefaultValueSql("GETDATE()");
 
         }
-
     }
 }

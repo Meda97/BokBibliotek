@@ -1,0 +1,61 @@
+﻿@model IEnumerable<BokBibliotek.Models.Boklån>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>CentrumBiblioteket</h1>
+    
+<H2>Försenade Böcker</H2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Namn
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Låntagare.Telefon)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Låntagare.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Bok.Boktitel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Lånedatum)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Returdatum)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @{ var namn = item.Låntagare.Förnamn + " " + item.Låntagare.Efternamn;
+                        @Html.DisplayFor(m => namn) }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Låntagare.Telefon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Låntagare.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bok.Boktitel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lånedatum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Returdatum)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>

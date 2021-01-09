@@ -70,9 +70,7 @@ namespace BokBibliotek.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Lånedatum")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETDATE()");
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("LåntagareId")
                         .HasColumnType("int");
@@ -119,8 +117,14 @@ namespace BokBibliotek.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Förnamn")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefon")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("LåntagareId");

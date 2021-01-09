@@ -89,8 +89,6 @@ namespace BokBibliotek.Controllers
 
             boklån.Utlånad = false;
 
-            boklån.Returdatum = DateTime.Now;
-
             _context.Entry(boklån).State = EntityState.Modified;
 
 
@@ -121,7 +119,8 @@ namespace BokBibliotek.Controllers
         [HttpPost]
         public async Task<ActionResult<Boklån>> PostBoklån(Boklån boklån)
         {
-            boklån.Returdatum = null;
+            boklån.Lånedatum = DateTime.Now;
+            boklån.Returdatum = DateTime.Now.AddDays(1);
             boklån.Utlånad = true;
             _context.Boklån.Add(boklån);
             await _context.SaveChangesAsync();

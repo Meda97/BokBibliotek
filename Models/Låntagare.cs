@@ -17,6 +17,9 @@ namespace BokBibliotek.Models
         [Required]
         public string Efternamn { get; set; }
 
+        public string Telefon { get; set; }
+        public string Email { get; set; }
+
         //Nav
         public ICollection<Boklån> Boklån { get; set; }
 
