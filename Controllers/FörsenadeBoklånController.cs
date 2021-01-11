@@ -19,7 +19,7 @@ namespace BokBibliotek.Controllers
             _context = context;
         }
 
-        // GET: FörsenadeBoklån
+        // GET: FörsenadeBoklån :)
         public async Task<IActionResult> Index()
         {
             var bokbibliotekContext = _context.Boklån.Where(b => b.Returdatum < DateTime.Now).Include(b => b.Bok).Include(b => b.Låntagare);
