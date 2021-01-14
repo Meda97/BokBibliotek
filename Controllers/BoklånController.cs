@@ -119,6 +119,7 @@ namespace BokBibliotek.Controllers
         [HttpPost]
         public async Task<ActionResult<Boklån>> PostBoklån(Boklån boklån)
         {
+            //datetime för tiden man har på sig att lämna boken
             boklån.Lånedatum = DateTime.Now;
             boklån.Returdatum = DateTime.Now.AddDays(1);
             boklån.Utlånad = true;
